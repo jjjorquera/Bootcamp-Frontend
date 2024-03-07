@@ -1,0 +1,38 @@
+
+
+
+- cuando hay un index.html y style.css, se denomina sitio web estatico.
+- cuando estamos en presencia de un sitio web con html, Css, JS. se denomina sitio web dinamico.
+- es necesario respetar una semantica en Html, para que tenga buen posicionamientos.
+
+Metodos
+
+GET "obtener informacion del servidor"
+GET "Realizar un request"
+GET "Necesito informacion del servidor"
+
+POST 
+nombre-usuario:
+password:
+
+RAW - se encuentra en headers.
+clave: valor
+
+Recursos Http
+
+GET
+POST
+
+
+CSS
+pading es un margen interno
+margin es un margen externo
+
+diplay : block = abarca todo el ancho de la pagina web o navegador.
+display flex : es un contenedor que afecta a sus hijos.
+
+Cuando el FLEX-DIRECTIOn es RAW el aling-items center se aplica de manera vertical (auto)
+Cuando el FLEX-DIRECTIOn es COLUM el aling-items center se aplica de manera horizontal (auto)
+
+cuando aplicamos padding o margin, debemos realizarlos en unidades relativas REM para que
+se ajuste automaticamente tanto a pc como a dispositivos moviles.

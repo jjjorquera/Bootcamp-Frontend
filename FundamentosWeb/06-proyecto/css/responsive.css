@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    background-color: black;
+    align-items: center;
+    padding: 1rem;
+    justify-content: space-between;
+    position: relative; /* Establece una posicion relativa, lo que permite que los elementos posicionados de manera absoluta dentro de el se basen en su posicion (Padres, Hijos)*/
+    z-index: 5;
+    top: 0px; /* Aca movemos el top hacia abajo*/
+}
+
+.logo {
+    max-width: 3rem ;
+    width: 40px;
+    height: 40px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #c8c1c1;
+}
+
+.abrir-menu,
+.cerrar-menu {
+    border: none;
+    background: none;
+    color: white;
+    cursor: pointer;
+}
+/* Responsive y puntos de quiebre(Breakpoint)
+    Estos estilos son especificos para dispositivos con anchura maximo
+    de 596px*/
+
+@media  (max-width: 596px) {
+      
+    .abrir-menu,
+    .cerrar-menu {
+        display: block;
+        font-size: 1.6rem;
+        color: white;
+        
+    }
+    .nav {
+        opacity: 0;
+        visibility: hidden; 
+        width: 60%;
+        background-color: #1c1c1c;
+        padding: 2rem;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 6;
+    }
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+        transition: opacity 0.5s ease, visibility 0.8s ease;
+    }
+    .nav-list {
+        /* el nav-list es el <ul>*/
+        display: flex;
+        margin-top: 4rem;
+        flex-direction: column;
+        align-items: flex-end;
+        font-size: 1rem;
+
+}
+}
+
+
+
+
+
+    

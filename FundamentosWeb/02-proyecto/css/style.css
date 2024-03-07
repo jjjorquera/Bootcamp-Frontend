@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    padding: 1;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+/* aca le dimos color al header y padding*/
+header {
+    background: green;
+    color: white;
+    padding: 10px;
+    margin: 0px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+}
+/* aca quitamos los puntos de la lista desordenada y dejamos en blanco las letras de los ancord.*/
+nav a {
+    color: white;
+    text-decoration: none;
+}
+/* aca sacamos el display block*/
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+/* aca le dimos un border rojo y alejamos el contenido del borde izquierdo de la pantalla con el padding que es un borde interno*/
+main {
+    border:  2px solid red;
+    padding: 20px
+    
+    /*
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-buttom: 20px;
+    padding-left: 20px;
+    */;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+    /*
+    padding-top: 10px;
+    padding-right: 0px;
+    padding-buttom: 10px;
+    padding-left: 0px;
+    */
+}
+/* con lo siguiente solucionamos el problema del sticky footer*/
+.site {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.site-content {
+    flex: 1;
+}
