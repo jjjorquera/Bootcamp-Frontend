@@ -44,5 +44,7 @@ los siguientes comandos:
     git checkout .
 ```
 realizando pruebas
+prueba realizada
+    
 
 
