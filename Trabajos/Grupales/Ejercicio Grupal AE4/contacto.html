@@ -41,28 +41,31 @@
         <section>
              <h2 class="text-center mb-4">Contáctanos</h2>
    
-            <form action="">
+             <form id="contactForm">
     
-                <div class="mb-3">
-                    <label for="nombre" class="form-label">Nombre: </label>
-                    <input type="text"  class="form-control" id="nombre">
-                </div>
-        
-                <div class="mb-3">
-                    <label for="email" class="form-label">Correo Electrónico: </label>
-                    <input type="email"  class="form-control" id="email">
-                </div>
-        
-                <div class="mb-3">
-                    <label for="mensaje" class="form-label">Mensaje: </label>
-                    <textarea class="form-control" id="mensaje"></textarea>
+              <div class="mb-3">
+                  <label for="nombre" class="form-label">Nombre: </label>
+                  <input type="text"  class="form-control" id="nombre"/>
+                  <div id="errorNombre" class="invalid-feedback"></div>
                     
-                </div>
-                <button type="submit" class="btn btn-primary">Enviar</button>
-            </form>
+              </div>
+      
+              <div class="mb-3">
+                  <label for="email" class="form-label">Correo Electrónico: </label>
+                  <input type="email"  class="form-control" id="email"/>
+                  <div id="errorEmail" class="invalid-feedback"></div>
+              </div>
+      
+              <div class="mb-3">
+                  <label for="mensaje" class="form-label">Mensaje: </label>
+                  <textarea class="form-control" id="mensaje"></textarea>
+                  <div id="errorArea" class="invalid-feedback"></div>
+              </div>
+              <button type="submit" class="btn btn-primary">Enviar</button>
+          </form>
         </section>
     </main>
-
+    <script src="validaciones.js"></script>
 
     <footer class="text-center mt-3 bg-danger-subtle p-4">
       <p>&copy; Te lo vendo - 2024</p>
