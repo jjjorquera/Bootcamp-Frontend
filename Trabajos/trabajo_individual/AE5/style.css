@@ -6,7 +6,7 @@
 
 body {
     width: 100%;
-   
+    background-image: url(https://science.nasa.gov/wp-content/uploads/2023/04/hubble_ngc2031-jpg.webp)
 }   
 
 .container {
@@ -21,8 +21,10 @@ body {
 
 .tiemporestante {
     border: 2px solid blue;
-    background-color: yellow;
     padding: 2rem;
     margin-top: 30rem;
+    color: yellow;
+    text-decoration: darkmagenta;
 
 }
+
