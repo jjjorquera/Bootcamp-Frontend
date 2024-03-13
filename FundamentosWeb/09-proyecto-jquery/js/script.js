@@ -18,6 +18,21 @@ $(document).ready(function() {
 
             $('#userList').append(newUserRow); //* agregamos el registro dentro del tbody.
             $('#userName').val(''); //* Limpiamos el input
-            userId++ 
+            userId++ //* Incrementamos el ID 1 en 1
+
 }})
+});
+
+$('body').on('dblclick','.editable', function() {
+    console.log(this); // al elemento html
+    activateEditMode(this);
 })
+
+function activateEditMode(cell) {
+    let currentElement = $(cell);
+
+    currentElement
+}
+
+
+//* no se utilizo este codigo debido al estar incompleto
