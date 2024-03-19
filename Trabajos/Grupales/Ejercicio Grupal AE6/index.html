@@ -66,12 +66,38 @@
                 </div>
             </div>
         </section>
+        <section>
+          <div id="carouselExampleAutoplaying" class="carousel slide mt-5" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://media.spdigital.cl/file_upload/Desktop_Hero_2-v2_BTS_e0f16ade.webp" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://media.spdigital.cl/file_upload/Desktop_Hero_7_BTS_(1)_b8f18a22.webp" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://media.spdigital.cl/file_upload/Desktop_Hero_6d135cac.webp" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://media.spdigital.cl/file_upload/Desktop_Hero_7_BTS_(2)_b46576fe.webp" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </section>
     </main>
 
 
     <footer class="text-center mt-3 bg-danger-subtle p-4">
         <p>&copy; Te lo vendo - 2024</p>
-        <span> Juan Jorquera Retamales - Margot Venegas Diaz - Makarena Yevenes Vega </span>
+        <span> Juan Jorquera Retamales</span>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <!-- jQuery -->
@@ -79,15 +105,27 @@
     <!-- Fancybox JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
     <script>
-        $(document).ready(function() {
-            $("a.fancybox").fancybox({
-                transitionIn: 'elastic',
-                transitionOut: 'elastic',
-                speedIn: 600,
-                speedOut: 200,
-                overlayshow: false
-            })
-        })
+        Fancybox.bind('[data-fancybox="gallery"]', {
+        compact: false,
+        contentClick: "iterateZoom",
+        Images: {
+          Panzoom: {
+            maxScale: 2,
+          },
+        },
+        Toolbar: {
+          display: {
+            left: [
+              "infobar",
+            ],
+            middle : [],
+            right: [
+              "iterateZoom",
+              "close",
+            ],
+          }
+        }
+      });
     </script>
   </body>
 </html>
